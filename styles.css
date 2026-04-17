@@ -137,3 +137,11 @@ button:hover {
         font-size: 0.9em;
     }
 }
+
+/* Favicon circular effect (experimental, browser-dependent) */
+@media (prefers-color-scheme: dark) {
+  link[rel="icon"] {
+    mask: radial-gradient(circle closest-side, black 100%, transparent 0);
+  }
+}
+
